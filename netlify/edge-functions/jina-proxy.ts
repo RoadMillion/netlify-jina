@@ -41,7 +41,7 @@ export default async (request: Request, context: Context) => {
     const timeoutId = setTimeout(() => {
       context.log('Request to Jina proxy timed out after 50 seconds.');
       controller.abort();
-    }, 50000); // 50 秒超时
+    }, 40000); // 40 秒超时
 
     let proxyResponse;
     try {
